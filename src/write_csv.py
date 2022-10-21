@@ -32,7 +32,7 @@ import time
 
 # --- Global variable --- #
 mode = 0
-port = 'COM3'
+port = 'COM5'
 baud = 9600
 dataRead = 0
 i = 0
@@ -44,7 +44,7 @@ i = 0
 
 letter = input("Type the letter: ")
 print(f"Letter typed: {letter}")
-file = open(f"{letter}.csv", "a")   # mode a - Open and update file
+file = open(f"F:\Meu Drive\Iot\SENAI-2s\morse_code_ai_translator\morse_code_ai_translator\letters\Claudinei\{letter}.csv", "a")   # mode a - Open and update file {letter}
 
 try:
     serialConnection = serial.Serial(port, baud, timeout=400)
@@ -73,6 +73,7 @@ while True:
         data = str(serialConnection.readline(), 'UTF-8') # Transform bytes in string
         data = data.replace('\n', '')
         file.write(data)
+        file.flush()
         serialConnection.write(b'1')
         print(i)
         i += 1
