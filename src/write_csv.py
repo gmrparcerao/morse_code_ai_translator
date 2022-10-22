@@ -29,10 +29,11 @@ Libraries:
 import sys
 import serial
 import time
+import os
 
 # --- Global variable --- #
 mode = 0
-port = 'COM5'
+port = 'COM3'
 baud = 9600
 dataRead = 0
 i = 0
@@ -44,7 +45,7 @@ i = 0
 
 letter = input("Type the letter: ")
 print(f"Letter typed: {letter}")
-file = open(f"F:\Meu Drive\Iot\SENAI-2s\morse_code_ai_translator\morse_code_ai_translator\letters\Claudinei\{letter}.csv", "a")   # mode a - Open and update file {letter}
+file = open(f"{letter}.csv", "a")   # mode a - Open and update file {letter}
 
 try:
     serialConnection = serial.Serial(port, baud, timeout=400)
