@@ -30,8 +30,8 @@
 // morse_model.h contains the array you exported from Python with xxd or tinymlgen
   #include "morse_model.h"
   #include <Arduino.h>
-  #include <Adafruit_SSD1306.h>
-  #include <Adafruit_GFX.h>
+  #include "Adafruit_SSD1306.h"
+  #include "Adafruit_GFX.h"
   #include <Wire.h>
 
 //---------------Global Variables------------------
@@ -49,10 +49,9 @@ int counter = 0;
 long initialTime;
 long actualTime;
 
-
 // Pins
 #define BUTTONPIN       15      // Button connected at pin 15
-#define BUZZERPIN       21      // Buzzer connected at pin 23
+#define BUZZERPIN       23      // Buzzer connected at pin 23
 #define LEDRECORDINGPIN 18      // Led that inform a recording in progress
 
 //Tensorflow - Lite

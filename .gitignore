@@ -5,6 +5,4 @@
 .vscode/ipch
 test/
 platformio.ini
-lib/
-include/
 venv/
