@@ -1,6 +1,6 @@
 # Morse Code AI Interpreter
 
-Copyright 2022, Claudinei de Oliveira, Guilherme Matheus Rafael Parcerão & Renan Bernardo dos Santos. Licensed under Academic Free License version 3.0. Review the LICENSE file for further details.
+Copyright 2022, Claudinei de Oliveira, Guilherme Matheus Rafael Parcerão & Renan Bernardo dos Santos. Licensed under GNU General Public License version 3.0. Review the LICENSE file for further details.
 
 ## Introduction
 
