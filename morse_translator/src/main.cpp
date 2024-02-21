@@ -11,28 +11,32 @@
     Goals: 
       Software to train an AI to undestand morse code
 
-    Hardware: 
+    Hardware:
+      ESP32 DOIT DevKit V1
+      OLED Display
+      Button
+      LED
 
     Libraries:
 
     Reviews: 
       R000 - begin
+      R001 - project structure reorganized
 
-    http://arduino.esp8266.com/stable/package_esp8266com_index.json
-    https://dl.espressif.com/dl/package_esp32_index.json
+    https://espressif.github.io/arduino-esp32/package_esp32_index.json
+    https://github.com/eloquentarduino/EloquentTinyML.git
 
   */
 
 //---------------Libraries-------------------------
 // morse_model.h contains the array you exported from Python with xxd or tinymlgen  
-  #include <EloquentTinyML.h>
-  #include <eloquent_tinyml/tensorflow.h>
+  #include <eloquent_tinyml.h>
+  #include <eloquent_tinyml/tf.h>
 // morse_model.h contains the array you exported from Python with xxd or tinymlgen
   #include "morse_model.h"
   #include <Arduino.h>
   #include "Adafruit_SSD1306.h"
   #include "Adafruit_GFX.h"
-  #include <Wire.h>
 
 //---------------Global Variables------------------
 

@@ -26,7 +26,6 @@
 
 //---------------Libraries-------------------------
   #include <Arduino.h>
-  #include <String.h>
 
 //---------------Global Variables------------------
 const int sampleSize = 180;
