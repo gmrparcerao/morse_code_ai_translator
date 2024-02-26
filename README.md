@@ -17,8 +17,8 @@ The project was tested on the following devices:
 
 Currently, tests are being made on the following devices:
 
-| RP2040 | K210 |
-| ------ | ---- |
+| RP2040 | K210 | STM32C0 | STM32H7 |
+| ------ | ---- | ------- | ------- |
 
 ## Instructions
 
@@ -28,3 +28,23 @@ Each folder has the code for a single component of the project, which together m
 - letters_csv_writer: Python project. Execute on PC while executing letters_capture on ESP32, so the letters Morse Code can be captured into a CSV file.
 - ML_training: Jupyter Notebook project. Use the CSV files generated on the anterior steps to train the neural network and generate the C array file for the translator.
 - morse_translator: PlatformIO project. The trained neural network is loaded on the ESP32 to do the translation.
+
+## Developers
+
+Claudinei de Oliveira
+
+![Claudinei de Oliveira](readme_img/claudinei.jpg "Claudinei de Oliveira")
+
+[GitHub](https://github.com/cldnei)
+
+Guilherme Parcerão
+
+![Guilherme Parcerão](readme_img/guilherme.jpg "Guilherme Parcerão")
+
+[GitHub](https://github.com/gmrparcerao) | [LinkedIn](https://www.linkedin.com/in/guilherme-parcerao/)
+
+Renan Bernardo
+
+![Renan Bernardo](readme_img/renan.jpg "Renan Bernardo")
+
+[GitHub](https://github.com/b3rnardo) | [LinkedIn](https://www.linkedin.com/in/b3rnardo/)
