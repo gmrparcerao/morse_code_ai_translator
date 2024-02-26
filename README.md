@@ -29,6 +29,10 @@ Each folder has the code for a single component of the project, which together m
 - ML_training: Jupyter Notebook project. Use the CSV files generated on the anterior steps to train the neural network and generate the C array file for the translator.
 - morse_translator: PlatformIO project. The trained neural network is loaded on the ESP32 to do the translation.
 
+## See the project working
+
+[![Watch the video](https://img.youtube.com/vi/uqSJfUc-sJXA/hqdefault.jpg)](https://www.youtube.com/embed/qSJfUc-sJXA)
+
 ## Developers
 
 Claudinei de Oliveira
